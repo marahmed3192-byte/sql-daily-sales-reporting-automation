@@ -23,7 +23,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Daily_Sales_Validation',
 		@delete_level=0, 
 		@description=N'Automatically validates retail sales data and logs five data quality checks.', 
 		@category_name=N'[Uncategorized (Local)]', 
-		@owner_login_name=N'Maryam\marya', @job_id = @jobId OUTPUT
+		@job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Run_Sales_Validation]    Script Date: 14-11-2026 11:45:34 ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Run_Sales_Validation', 
