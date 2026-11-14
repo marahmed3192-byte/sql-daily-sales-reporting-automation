@@ -85,3 +85,20 @@ The automated summary calculates the following metrics by transaction date and s
 Successfully developed and manually tested a scheduled SQL Server automation workflow that validates sales data, records data quality results, and refreshes store-level daily sales reporting tables.
 
 The project uses synthetic sample data containing intentional quality issues to demonstrate validation and reporting automation.
+
+## Project Screenshots
+
+### 1. SQL Server Agent Job
+Shows the two-step automated workflow.
+
+![SQL Server Agent Job](screenshots/01_sql_agent_job.png)
+
+### 2. Data Quality Audit Results
+Shows the five validation checks and their failed-record counts.
+
+![Data Quality Audit](screenshots/02_data_quality_audit.png)
+
+### 3. Daily Sales Summary
+Shows the store-level daily sales reporting output.
+
+![Daily Sales Summary](screenshots/03_daily_sales_summary.png)
